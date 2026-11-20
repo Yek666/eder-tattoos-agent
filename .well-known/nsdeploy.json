@@ -1,0 +1,18 @@
+{
+  "exports": [
+    {
+      "aliases": [
+        "eder_tattoos_booking",
+        "eder_assistant"
+      ],
+      "front_man": "eder_assistant",
+      "network": "eder_tattoos_booking",
+      "url": "eder_tattoos_booking"
+    }
+  ],
+  "imports": [],
+  "link_updates": {
+    "mode": "browser-local"
+  },
+  "protocol": "nsdeploy-link/v1"
+}
