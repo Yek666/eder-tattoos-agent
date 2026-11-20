@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eder Tattoos — Tatuaje pequeño en Puebla · Reserva con agente</title>
+<meta name="description" content="Eder Tattoos en Puebla: tatuaje pequeño de hasta 5 cm por $1,000 MXN, línea fina, letras, fechas y símbolos. Aparta tu cita con $200. Pregúntale al agente o reserva por WhatsApp.">
+<link rel="stylesheet" href="styles.css">
+<script type="module" src="script.js"></script>
+<script type="module" src="site.js"></script>
+</head>
+<body>
+<header>
+  <h1>Eder Tattoos</h1>
+  <p class="tagline">Tatuajes pequeños en Puebla · Fine line, letras, fechas y símbolos</p>
+</header>
+
+<main>
+  <section aria-labelledby="catalog-heading">
+    <h2 id="catalog-heading">El servicio / The service</h2>
+    <article class="card">
+      <h3>Tatuaje pequeño — hasta 5 cm</h3>
+      <p><strong>Precio: $1,000 MXN</strong> · Anticipo para apartar: <strong>$200 MXN</strong> · Resto el día de la cita: $800 MXN.</p>
+      <p>Estilos: línea fina, letras, fechas y símbolos.</p>
+      <ul>
+        <li>Tamaño máximo: 5 cm. Para un tatuaje más grande, escríbele directo a Eder por WhatsApp — no hay otro precio publicado aquí.</li>
+        <li>No se cobra en línea. El anticipo y el resto se acuerdan con Eder por WhatsApp.</li>
+        <li>Ubicación: Puebla, México.</li>
+      </ul>
+      <p><a href="https://wa.me/522211447752" target="_blank" rel="noopener">WhatsApp de Eder Tattoos: 2211447752</a></p>
+    </article>
+  </section>
+
+  <section aria-labelledby="booking-heading">
+    <h2 id="booking-heading">Reserva tu cita / Book your appointment</h2>
+    <p>Llena el formulario o pregúntale al agente abajo — los dos usan los mismos datos y el mismo precio. Al confirmar, se prepara tu mensaje de WhatsApp; <strong>la cita queda real solo cuando Eder te la confirma por WhatsApp</strong>.</p>
+    <form id="booking-form">
+      <label for="idea">Tu idea del tatuaje
+        <input id="idea" name="idea" type="text" placeholder="Ej. una araña pequeña en línea fina" autocomplete="off">
+      </label>
+      <label for="style">Estilo
+        <select id="style" name="style">
+          <option value="">Elige un estilo…</option>
+          <option value="linea-fina">Línea fina</option>
+          <option value="letras">Letras</option>
+          <option value="fechas">Fechas</option>
+          <option value="simbolos">Símbolos</option>
+        </select>
+      </label>
+      <label for="size">Tamaño (cm, de 1 a 5)
+        <input id="size" name="size" type="number" min="1" max="5" step="0.5" placeholder="Ej. 4">
+      </label>
+      <label for="placement">Zona del cuerpo
+        <input id="placement" name="placement" type="text" placeholder="Ej. muñeca, antebrazo, tobillo" autocomplete="off">
+      </label>
+      <label for="date">Fecha preferida
+        <input id="date" name="date" type="date">
+      </label>
+      <label for="name">Tu nombre
+        <input id="name" name="name" type="text" placeholder="Ej. Ana" autocomplete="name">
+      </label>
+      <p id="price-summary" role="status">Total: $1,000 MXN · Anticipo para apartar: $200 MXN · Resto el día de la cita: $800 MXN</p>
+      <div class="actions">
+        <button type="submit">Guardar en mi reserva</button>
+        <button type="button" id="clear-booking">Limpiar</button>
+        <button type="button" id="confirm-booking">Confirmar reserva</button>
+      </div>
+      <p id="form-message" role="status"></p>
+      <p><a id="whatsapp-link" class="disabled" href="https://wa.me/522211447752" target="_blank" rel="noopener" aria-disabled="true">Mandar mi reserva por WhatsApp</a> (se activa cuando la reserva está completa)</p>
+      <div id="confirmed-box" hidden></div>
+    </form>
+  </section>
+
+  <section id="assistant" class="assistant" aria-labelledby="assistant-heading">
+    <h2 id="assistant-heading">Pregúntale a Eder — Ask Eder (agente)</h2>
+    <p>El agente conoce el catálogo y el precio real, puede llenar tu reserva y prepararla para WhatsApp. Responde en español o inglés.</p>
+    <p class="assistant-note">Tus mensajes y los datos de esta página van al proveedor de IA que elijas en los ajustes de abajo. Tú confirmas antes cualquier acción que no se pueda deshacer. El agente no cobra ni guarda citas reales.</p>
+    <p id="assistant-status" role="status">Connecting the assistant… If this message stays, the assistant could not load. You can still use the page directly.</p>
+    <div id="agent-app">
+      <div data-ns-slot="header"></div>
+      <div class="assistant-panels">
+        <div data-ns-slot="chat"></div>
+        <div data-ns-slot="agents"></div>
+      </div>
+      <div data-ns-slot="settings"></div>
+    </div>
+    <details id="demo-box">
+      <summary>Probar sin llave (demo local, sin IA)</summary>
+      <p><strong>Demo, no es el agente del hackathon.</strong> Estas respuestas las genera esta página con reglas simples, sin mandar nada a ningún proveedor de IA. Sirve para probar que el formulario se llena y el enlace de WhatsApp se arma. Para el agente real, pon tu llave en ⚙ AI model settings.</p>
+      <div class="actions">
+        <button type="button" data-demo="¿Cuánto cuesta un tatuaje pequeño?">¿Cuánto cuesta un tatuaje pequeño?</button>
+        <button type="button" data-demo="Quiero un tatuaje de letras de 4 cm en la muñeca, mi idea es la fecha 12-05-2020, fecha preferida 2027-01-20, me llamo Ana">Llenar una reserva de ejemplo</button>
+        <button type="button" data-demo="¿Qué estilos hacen?">¿Qué estilos hacen?</button>
+      </div>
+      <p id="demo-answer" role="status"></p>
+    </details>
+  </section>
+
+  <section aria-labelledby="how-heading">
+    <h2 id="how-heading">Cómo funciona este sitio agente</h2>
+    <ul>
+      <li>Esta página publica su red de agentes en <a href="agent-manifest.json">agent-manifest.json</a> y <a href="eder_tattoos_booking.network.json">eder_tattoos_booking.network.json</a> (archivos públicos, JSON).</li>
+      <li>El agente corre en tu navegador. Tú pones tu propia llave de IA en ⚙ AI model settings — el sitio no paga tus llamadas y no guarda tu llave en ningún servidor.</li>
+      <li>Todo lo que se construyó aquí es de código abierto (open source).</li>
+      <li>Proyecto para el <a href="https://cognizant-agenticweb.devpost.com/">Open Agentic Web Challenge</a> en Devpost. Fecha límite: 11 de enero de 2027, 16:00 UTC.</li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <p>Eder Tattoos · Puebla, México · WhatsApp 2211447752 · Tatuaje pequeño hasta 5 cm: $1,000 MXN, anticipo $200 MXN.</p>
+</footer>
+<script type="module" src="demo-agent.js"></script>
+</body>
+</html>
