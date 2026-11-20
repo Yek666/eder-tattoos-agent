@@ -1,0 +1,10 @@
+{
+  "networks": [
+    {
+      "name": "eder_tattoos_booking"
+    }
+  ],
+  "actions": {
+    "version": 1
+  }
+}
